@@ -30,6 +30,8 @@ use strict;
 use warnings FATAL => "all";
 use Mouse::Role;
 
+with qw( Data::Validator::Role::Sequenced );
+
 =head1 MODIFIERS
 
 =over 4
@@ -56,6 +58,12 @@ Although it should be of nominal impact to performance, due to the constraints
 of Data::Validator this first maps all provided parameters to a hash, validates
 them as a hash, and then maps the has back to a list.  A more efficient method
 would clearly to be use just a list from top to bottom.
+
+=head1 BUGS
+
+If you find any, feel free to submit them.
+
+  https://github.com/ssmccoy/Data-Validator-Role-Ordered
 
 =head1 LICENSE
 

@@ -4,7 +4,7 @@ use Module::Build;
 
 my $build = Module::Build->new(
     module_name => "Data::Validator::Role::Ordered",
-    dist_version => 0.01,
+    dist_version => 0.03,
     requires    => {
         "Data::Validator" => 0
     },
